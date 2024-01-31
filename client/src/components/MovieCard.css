@@ -1,0 +1,75 @@
+/* MovieCard.css */
+
+/* Base styling for the movie card */
+.movie-card {
+    flex: 0 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the movie card image */
+.movie-card img {
+    max-width: 150px; /* Decrease the max-width to keep proportions */
+    max-height: 225px; /* Decrease the max-height to keep proportions */
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+
+/* Hover effect for the movie card image */
+.movie-card:hover img {
+    transform: scale(1.25);
+    box-shadow: 0 0 20px gold;
+}
+
+/* Styling for movie details */
+.movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.8); /* Opaque black background */
+    color: white; /* White text color */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    /* Glowing text effect from white to plum */
+    text-shadow: 0 0 10px white, 0 0 20px plum, 0 0 30px plum;
+}
+
+/* Animation for the glowing effect */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px white, 0 0 20px plum, 0 0 30px plum;
+    }
+    50% {
+        text-shadow: 0 0 20px plum, 0 0 30px plum, 0 0 40px plum;
+    }
+    100% {
+        text-shadow: 0 0 10px white, 0 0 20px plum, 0 0 30px plum;
+    }
+}
+
+/* Apply the glow animation always to movie details */
+.movie-details {
+    animation: glowing 1s infinite;
+}
+
+/* Hover effect for the movie card to show movie details */
+.movie-card:hover .movie-details {
+    display: block;
+    opacity: 1;
+    width: 65%; /* Match the width of the parent movie image */
+    margin: 0 auto; /* Center horizontally */
+    padding: 5px; /* Add padding for spacing */
+    text-overflow: clip; /* Show full text */
+    white-space: normal; /* Allow text to wrap */
+}

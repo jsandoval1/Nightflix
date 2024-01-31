@@ -1,0 +1,115 @@
+/* Home.css */
+
+/* Styles for the main container */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Apply a glowing effect to the home title */
+.home-title {
+    font-size: 30px;
+    color: goldenrod;
+    margin-top: 0;
+    animation: glow 2s infinite alternate;
+}
+
+/* Define the glowing animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px goldenrod;
+    }
+    100% {
+        text-shadow: 0 0 20px goldenrod, 0 0 30px plum; /* You can choose another color if you prefer */
+    }
+}
+
+/* Styles for the genre links section */
+.genre-links {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    /* Media query for mobile devices (adjust the breakpoint as needed) */
+    @media (max-width: 768px) {
+        flex-direction: row; /* Stack buttons vertically on small screens */
+    }
+}
+
+/* Styles for genre links */
+.genre-link {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    color: white; /* Set the genre text color to goldenrod */
+    background-color: purple; /* Set the background color to plum */
+
+    /* Adjust the font size using vh units for mobile devices */
+    @media (max-width: 768px) {
+        font-size: 1.25vh; /* Adjust the font size using vh units for small screens */
+    }
+}
+
+/* Styles for the selected link */
+.selected-link {
+    background-color: plum; /* Set the background color of the selected link to plum */
+    color: white; /* Set the text color of the selected link to white */
+    box-shadow: 0 0 10px #fff; /* Add a white aura to the selected link */
+}
+
+/* Styles for the movie list section */
+.movie-list {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black; /* Add negative margin to compensate for spacing between cards */
+}
+
+/* Styles for movie cards */
+.movie-card {
+    flex: 0 0 calc(20% - 20px); /* 25% width for each movie card with spacing */
+    margin: 20px; /* Add margin for spacing between movie cards */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1% 4%
+}
+
+/* Add these styles to your CSS file */
+.user-favorites-link {
+    color: goldenrod; /* Text color */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Adjust the font size */
+    margin-left: 20px; /* Add some space to the left of the link */
+    position: relative; /* Set the position to relative */
+}
+
+/* Define the glowing animation for the link */
+.user-favorites-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: goldenrod;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Apply the glow effect when hovering over the link */
+.user-favorites-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
