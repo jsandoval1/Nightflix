@@ -1,14 +1,13 @@
-> 📌 **Note:** This project, NightFlix, is a snapshot of my early journey into full-stack development and particularly into React. It has several areas for improvement, and I'm fully aware of them. However, I've chosen to publicize it intentionally. Why? Because it allows you, the reader, to see my progress and development in React and full-stack development in general. As you explore my more recent projects, you'll notice a significant evolution in my coding practices and skills. Checkout (insert link when I deploy) this project to see my progession. Enjoy the journey!
+> 📌 **Note:** This project, NightFlix, is a snapshot of my early journey into full-stack development and particularly into React. It has several areas for improvement, and I'm fully aware of them. However, I've chosen to publicize it intentionally. Why? Because it allows you, the reader, to see my progress and development in React and full-stack development in general. As you explore my more recent projects, you'll notice a significant evolution in my coding practices and skills. Checkout (I will insert link when I deploy) this project to see my progession. Enjoy the journey!
 
-<table>
-    <tr>
-        <td><img src="https://picsum.photos/350" alt="Logo" width="300"></td>
-        <td>
-            <h2><a href="http://your-website-link.com/">NightFlix</a></h2>
-            NightFlix is a web application that allows users to browse movies and TV shows, and add them to their watchlist. In the future, users will be able to interact with others and chat about their favorite movies and shows.
-        </td>
-    </tr>
-</table>
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+    <img src="https://picsum.photos/350" alt="Logo" style="width: 100%; max-width: 350px; margin-right: 20px;">
+    <div>
+        <h6>Please read the pinned note about this project before proceeding.</h6>
+        <h2><a href="http://nightflix-app.com/">NightFlix</a></h2>
+        NightFlix is a web application that allows users to browse movies and TV shows, and add them to their watchlist. In the future, users will be able to interact with others and chat about their favorite movies and shows.
+    </div>
+</div>
 
 ## 📚 Table of Contents
 1. 💡 [Conceptualization](#conceptualization)
@@ -67,8 +66,16 @@ However, I did use **Postman** for API testing and regression testing, which hel
 
 Since then, I have recognized the critical role that testing plays in building robust and reliable software. In future projects, I plan to incorporate more comprehensive testing practices right from the start. I aim to use testing frameworks such as Jest for unit testing and Cypress for end-to-end testing, in addition to Postman for API testing. This will ensure that all components and functionalities work as expected and that any bugs or issues are identified and resolved promptly.
 
-## Deployment
-Deployment details will be added once the project is deployed.
+## 🚀 Deployment
+| Category | Technology | Usage |
+| --- | --- | --- |
+| **Cloud Platform** | AWS EC2 | The cloud service used to host the application |
+| **Operating System** | Ubuntu | The operating system on the EC2 instance |
+| **Database** | MongoDB Atlas | The cloud database service used for storing application data |
+| **Process Manager** | PM2 | The process manager used for managing the application process |
+| **Text Editor** | VIM/nano | The text editors used for editing files on the server |
+| **Domain Connection** | GoDaddy | The domain registrar used for connecting the domain to the application |
+
 
 ## 🛠️ Maintenance
 As of now, I have no plans to actively maintain NightFlix. While this may seem unusual, it's important to note that this project serves as a snapshot of my early coding journey. Since its creation, I've gained substantial knowledge and experience, and my coding style and practices have evolved significantly.
