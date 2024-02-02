@@ -1,13 +1,10 @@
 > 📌 **Note:** This project, NightFlix, is a snapshot of my early journey into full-stack development and particularly into React. It has several areas for improvement, and I'm fully aware of them. However, I've chosen to publicize it intentionally. Why? Because it allows you, the reader, to see my progress and development in React and full-stack development in general. As you explore my more recent projects, you'll notice a significant evolution in my coding practices and skills. Checkout (I will insert link when I deploy) this project to see my progession. Enjoy the journey!
 
-<div style="display: flex; flex-wrap: wrap; align-items: center;">
-    <img src="https://picsum.photos/350" alt="Logo" style="max-width: 350px; margin-right: 20px;">
-    <div>
-        <h6>Please read the pinned note about this project before proceeding.</h6>
-        <h2><a href="http://nightflix-app.com/">NightFlix</a></h2>
-        NightFlix is a web application that allows users to browse movies and TV shows, and add them to their watchlist. In the future, users will be able to interact with others and chat about their favorite movies and shows.
-    </div>
-</div>
+![NightFlix Logo](assets/NightFLIXrectangle.png)
+
+<h6>Please read the pinned note about this project before proceeding.</h6>
+<h2><a href="http://nightflix-app.com/">NightFlix</a></h2>
+NightFlix is a web application that allows users to browse movies and TV shows, and add them to their watchlist. In the future, users will be able to interact with others and chat about their favorite movies and shows.
 
 ## 📚 Table of Contents
 1. 💡 [Conceptualization](#conceptualization)
@@ -34,12 +31,12 @@ While developing NightFlix, my primary focus was on mastering **React** and its 
 In the early stages, I experimented with **Material UI**, but soon realized that a solid understanding of React's foundations was essential for effective use. The current version of NightFlix uses a mix of CSS files and inline styling. Although not a best practice, it was a necessary step in the learning process and towards making the application functional.
 
 ## 🚀 Technology Stack
-| Category | Technologies |
-| --- | --- |
-| **Frontend** | React, React Router DOM, CSS, Material-UI |
-| **Backend** | Node.js, Express, MongoDB, Mongoose, CORS, dotenv |
-| **Testing** | Postman |
-| **Deployment** | AWS, Ubuntu |
+| Category | Technologies | Description |
+| --- | --- | --- |
+| **Frontend** | React, React Router DOM, CSS, Material-UI | React is used for building the user interface, with React Router DOM for routing, CSS for styling, and Material-UI for prebuilt components. |
+| **Backend** | Node.js, Express, MongoDB, Mongoose, CORS, dotenv | Node.js and Express form the backend server. MongoDB is the database, with Mongoose as the ODM. CORS is used for handling cross-origin requests, and dotenv for managing environment variables. |
+| **Testing** | Postman | Postman is used for testing the API endpoints. |
+| **Deployment** | AWS, Ubuntu | The application is deployed on an AWS EC2 instance running Ubuntu. |
 
 ## 🏗️ Architecture
 The **front-end** is built using **React**, a popular JavaScript library for building user interfaces. The application is structured into views, which are further divided into components and pages. This modular approach allows for better code reusability and easier maintenance. State management is handled using React's built-in hooks, ensuring a smooth user experience.
