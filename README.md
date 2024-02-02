@@ -1,7 +1,7 @@
 > 📌 **Note:** This project, NightFlix, is a snapshot of my early journey into full-stack development and particularly into React. It has several areas for improvement, and I'm fully aware of them. However, I've chosen to publicize it intentionally. Why? Because it allows you, the reader, to see my progress and development in React and full-stack development in general. As you explore my more recent projects, you'll notice a significant evolution in my coding practices and skills. Checkout (I will insert link when I deploy) this project to see my progession. Enjoy the journey!
 
 <p align="center">
-    <img src="assets/NightFLIXrectangle.png" alt="NightFlix Logo" width="100%">
+    <img src="assets/NightflixCard.png.png" alt="NightFlix Logo" width="100%">
 </p>
 
 <h6>Please read the pinned note about this project before proceeding.</h6>
@@ -19,6 +19,8 @@ NightFlix is a web application that allows users to browse movies and TV shows, 
 8. 🛠️ [Maintenance](#maintenance)
     - ⚠️ [Known Issues](#known-issues)
     - 📝 [User Feedback](#user-feedback)
+
+---
 
 ## 💡 Conceptualization
 | Problem Statement | Target Audience | Why Choose NightFlix |
@@ -66,6 +68,8 @@ However, I did use **Postman** for API testing and regression testing, which hel
 Since then, I have recognized the critical role that testing plays in building robust and reliable software. In future projects, I plan to incorporate more comprehensive testing practices right from the start. I aim to use testing frameworks such as Jest for unit testing and Cypress for end-to-end testing, in addition to Postman for API testing. This will ensure that all components and functionalities work as expected and that any bugs or issues are identified and resolved promptly.
 
 ## 🚀 Deployment
+This application is deployed on an **AWS EC2** instance running **Ubuntu**. The deployment process involved setting up the server environment, installing the necessary dependencies, and configuring the application to run on the server. The application is hosted on a custom domain, which is connected to the EC2 instance using **GoDaddy**. Please visit [NightFlix](http://nightflix-app.com/) to explore the deployed application.
+
 | Category | Technology | Usage |
 | --- | --- | --- |
 | **Cloud Platform** | AWS EC2 | The cloud service used to host the application |
