@@ -1,6 +1,8 @@
 > 📌 **Note:** This project, NightFlix, is a snapshot of my early journey into full-stack development and particularly into React. It has several areas for improvement, and I'm fully aware of them. However, I've chosen to publicize it intentionally. Why? Because it allows you, the reader, to see my progress and development in React and full-stack development in general. As you explore my more recent projects, you'll notice a significant evolution in my coding practices and skills. Checkout (I will insert link when I deploy) this project to see my progession. Enjoy the journey!
 
-![NightFlix Logo](assets/NightFLIXrectangle.png)
+<p align="center">
+    <img src="assets/NightFLIXrectangle.png" alt="NightFlix Logo" width="100%">
+</p>
 
 <h6>Please read the pinned note about this project before proceeding.</h6>
 <h2><a href="http://nightflix-app.com/">NightFlix</a></h2>
